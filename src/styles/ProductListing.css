@@ -1,0 +1,72 @@
+@import url(../index.css);
+.products-page {
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.products-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filter-topic {
+  display: flex;
+  justify-content: space-between;
+}
+.drawer-color {
+  color: var(--primary-pink-color);
+  font-size: var(--size-1);
+}
+.card-product {
+  box-shadow: 0px 2px 8px 0px var(--grey-color);
+  text-align: left;
+  cursor: pointer;
+  width: 30%;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+
+.image-product {
+  width: 100%;
+  height: 15rem;
+}
+
+.product-title {
+  font-size: var(--size-0);
+  font-weight: var(--font-dark);
+}
+.btn-product {
+  border: none;
+  /* border-radius: var(--border-radius); */
+  cursor: pointer;
+  background-color: var(--main-Cta-color);
+  text-decoration: none;
+  font-size: var(--size-0);
+  font-weight: var(--font-bold);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.secondary-pro {
+  background-color: var(--secondry-pink-color);
+}
+.wishlist-badge {
+  color: var(--secondry-pink-color);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+}
+.checklist{
+    text-align: left;
+}
+.filters-size{
+    font-size:var(--size-1)
+}

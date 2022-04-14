@@ -1,0 +1,37 @@
+@import url(../index.css);
+.footer-container {
+
+    color: var(--secondry-color);
+    background-color: var(--footer-color);
+    width: 100%;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+    font-size: var(--size-1);
+}
+
+.footer-container ul a {
+    color: var(--secondry-color);
+    text-decoration: none;
+    font-weight: var(--font-light);
+    font-size: var(--size-0);
+    opacity: 0.5;
+}
+
+.footer-container ul a:hover {
+    opacity: 1;
+    color: var(--primary-pink-color)
+}
+.filter-btn{
+    font-size:var(--size-1);
+
+}
+.filter-btn:hover{
+    color:var(--primary-pink-color)
+}

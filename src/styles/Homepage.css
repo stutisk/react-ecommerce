@@ -1,0 +1,110 @@
+@import url(../index.css);
+.img-hero {
+    width: 100%;
+    /* max-width: 100%; */
+    position: relative;
+    text-align: center;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 9rem;
+    left: 5rem;
+    width:50%;
+    font-size: 4vw;
+}
+
+.hero-btn {
+    background-color: var(--primary-pink-color);
+    border-radius: var(--border-radius);   
+}
+.hero-btn a{
+    color:var(--white-color);
+    font-size:var(--size-0)
+   
+}
+.hero-btn:hover {
+    background-color: var(--secondry-pink-color);
+    color: var(--secondry-color);
+}
+/* categories */
+.category,.text,.service-icon{
+    text-align: center;
+}
+
+.category p {
+    font-size: var(--size-2);
+    font-weight: var(--font-bold);
+}
+
+.card-categories,.service-category {
+    display: flex;
+    gap: 5rem;
+    justify-content:center;
+    flex-wrap: wrap;
+    width:100%;
+   
+}
+.card-background{
+    background-image: url("https://res.cloudinary.com/dvbw8xujd/image/upload/v1649776475/3df85e95-5d80-46b7-a8fb-75fd485c35ba_h8sczo.webp"); 
+}
+.cards {
+    text-align: center;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    align-self: baseline;
+    width: 15rem;
+    border: 2px solid var(--secondry-color);
+}
+.main-categories {
+    width: 25rem;
+}
+
+.main-categories:hover,
+.blog-categories:hover {
+    border: 2px inset var(--secondry-pink-color);
+    border-radius: 0%;
+    box-shadow: 0 4px 8px 0 var(--border-color);
+}
+
+.blog-categories {
+    width: 17rem;
+    height: 16rem;
+}
+
+.blog-created,
+.date {
+    color: var(--black-color);
+    text-align: left;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.cards:hover {
+    box-shadow: 0 1px 2px 0 var(--border-color);
+}
+
+.card-heading{
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: var(--font-light);
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+.services{
+    display:flex;
+    flex-direction: column;
+
+}
+.service-category{
+    display:flex;
+    justify-content: space-around;
+   
+}
