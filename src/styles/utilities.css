@@ -1,0 +1,56 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); */
+:root {
+    --black-color: rgb(0, 0, 0);
+    --border-color: rgba(94, 91, 91, 0.493);
+    --footer-color: rgb(36, 39, 41);
+    --primary-pink-color: var(--main-Cta-color);
+    --secondry-pink-color: #277a77cb;
+    --white-color: rgb(255,255,255);
+    --orange-color:rgb(223,74,50);
+    --box-shadow-color:rgba(0, 0, 0, 0.25);
+  
+  }
+  .m-t3{
+    margin-top: 3.8rem;
+  
+  }
+  .m-2t{
+    margin-top:2.5rem;
+  }
+  .m-t5{
+    margin-top: 5rem;
+  
+  }
+  .m-1t{
+    margin-top:1rem;
+  }
+  .m-b2{
+    margin-bottom: 2rem;;
+  }
+  .m-l0{
+    margin-left: 0;
+  }
+  
+  .m-lr{
+    margin: 0 3%; 
+  }
+  .m-l5{
+    margin-left:4rem;
+  }
+  .padding-footer{
+    padding: 1rem 4rem
+  }
+  .padding-i{
+    padding: 0 1.5rem;
+  }
+  .input-padding{
+    padding:0.5rem;
+  }
+
+  .icon-color{
+    color: var(--secondry-pink-color);
+  }
+  .logout{
+    display: inline-flex;
+    
+}
