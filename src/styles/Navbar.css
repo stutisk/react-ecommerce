@@ -1,0 +1,37 @@
+@import url(../index.css);
+.span {
+    color: var(--main-Cta-color);
+}
+.search-bar input {
+    width: 15rem;
+    height: 2.5rem;
+    border: 2px solid var(--primary-pink-color);
+    border-radius: var(--border-radius);
+}
+
+.span-color {
+    color: var(--primary-pink-color);
+}
+.nav-link-container a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-secondry);
+    font-size:var(--size-0)
+}
+
+.right-links ul {
+    font-size:var(--size-1);
+    display: flex;
+    justify-content:space;
+}
+
+.right-links li {
+    list-style: none;
+}
+
+.right-links li a {
+    font-size: var(--size-0);
+    color: var(--text-secondary);
+    text-decoration: none;
+    
+}
