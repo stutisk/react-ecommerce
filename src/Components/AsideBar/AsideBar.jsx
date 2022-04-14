@@ -4,20 +4,20 @@ import "../../styles/ProductListing.css";
 const AsideBar = () => {
     return (
     <>
-      <div class="drawer-container product-drawer-container">
-                <div class="drawer ">
-                    <aside class="aside filter-aside">
-                        <div class="drawer-header ">
-                            <div class="filter-topic m-2t">
-                                <div class=" filter-btn">FILTERS</div>
-                                <button class="filter-btn"> CLEAR</button>
+      <div classNameName="drawer-container product-drawer-container">
+                <div className="drawer ">
+                    <aside className="aside filter-aside">
+                        <div className="drawer-header ">
+                            <div className="filter-topic m-2t">
+                                <div className=" filter-btn">FILTERS</div>
+                                <button className="filter-btn"> CLEAR</button>
                             </div>
 
                         </div>
-                        <div class="drawer-color m-1t">Categories</div>
+                        <div className="drawer-color m-1t">Categories</div>
                         <hr />
-                        <nav class="drawer-navigation filters-size">
-                            <form class="checklist">
+                        <nav className="drawer-navigation filters-size">
+                            <form className="checklist">
                                 <label for="a"><input type="checkbox" id="a"/>Men</label>
                                 <label for="a"><input type="checkbox" id="a"/>Women</label>
                                 <label for="a"><input type="checkbox" id="a"/>Kids</label>
@@ -25,9 +25,9 @@ const AsideBar = () => {
                                 <label for="a"><input type="checkbox" id="a"/>Sets</label>
                             </form>
                         </nav>
-                        <div class=" drawer-color">Price Range</div>
+                        <div className=" drawer-color">Price Range</div>
                         <hr />
-                        <nav class="drawer-navigation filters-size">
+                        <nav className="drawer-navigation filters-size">
                             <input type="range" list="tickmarks"/>
                             <datalist id="tickmarks">
                                 <option value="0" label="0%"></option>
@@ -43,10 +43,10 @@ const AsideBar = () => {
                                 <option value="100" label="100%"></option>
                             </datalist>
                         </nav>
-                        <div class=" drawer-color">Ratings</div>
+                        <div className=" drawer-color">Ratings</div>
                         <hr />
-                        <nav class="drawer-navigation filters-size">
-                            <form class="checklist">
+                        <nav className="drawer-navigation filters-size">
+                            <form className="checklist">
                                 <label for="a"><input name="A" type="radio" id="a"/>4 Stars & above</label>
                                 <label for="a"><input name="A" type="radio" id="a"/>2 Stars & above</label>
                                 <label for="a"><input name="A" type="radio" id="a"/>3 Stars & above</label>
@@ -54,10 +54,10 @@ const AsideBar = () => {
                             </form>
                         </nav>
 
-                        <div class=" drawer-color">Sort</div>
+                        <div className=" drawer-color">Sort</div>
                         <hr />
-                        <nav class="drawer-navigation filters-size">
-                            <form class="checklist">
+                        <nav className="drawer-navigation filters-size">
+                            <form className="checklist">
                                 <label for="a"><input name="A" type="radio" id="a"/>Price - Low To High</label>
                                 <label for="a"><input name="A" type="radio" id="a"/>Price - High To Low</label>
                             </form>
