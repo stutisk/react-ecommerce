@@ -1,6 +1,6 @@
 import "../../styles/ProductListing.css";
 import React from "react";
-import {Productcard} from "../Cards/Productcard";
+import {Cartitemcard} from "../Cards/Cartitemcard";
 import {useEffect ,useState} from "react";
 import axios from "axios";
 ;
@@ -24,7 +24,7 @@ const ProductListing = () => {
   return (
     <div className="products-container m-2t m-l5">
       {
-      products.map((products) => <Productcard products={products}/>)
+      products.map((products) => <Cartitemcard products={products}/>)
       }
     </div>
   );
