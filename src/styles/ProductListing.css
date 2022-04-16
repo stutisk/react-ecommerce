@@ -54,8 +54,9 @@
   display: flex;
   justify-content: space-around;
 }
-.secondary-pro {
-  background-color: var(--secondry-pink-color);
+.remove-from-cart-btn{
+  background-color:#c9e2df;
+  color:var(--secondry-pink-color);
 }
 .wishlist-badge {
   color: var(--secondry-pink-color);
