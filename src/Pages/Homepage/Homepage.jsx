@@ -10,6 +10,7 @@ import {
   FaTruckMoving,
   FaRegCreditCard,
 } from "../../Components/Icons";
+import { Link} from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -25,7 +26,7 @@ const Homepage = () => {
           20% OFF SITE WIDE SALE
           <button className="hero-btn btn-padding">
             {" "}
-            <a href="./product listing page/products.html">SHOP NOW</a>
+            <Link to="/productpage">SHOP NOW</Link>
           </button>
         </div>
       </div>
