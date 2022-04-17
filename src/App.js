@@ -5,14 +5,17 @@ import {Productpage} from "./Pages/Productpage/Productpage";
 import { Routes, Route} from "react-router-dom";
 import {Loginpage} from "./Pages/Authpage/Loginpage"
 import {Signuppage} from "./Pages/Authpage/Signuppage"
+import {Cartpage} from "./Pages/Cartpage/Cartpage"
 
 
 function App() {
   return (
+
     <div className="App">
      <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/productpage" element={<Productpage />} />
+        <Route path="/Cartpage" element={<Cartpage />} />
         <Route path="/Signup" element={<Loginpage />} />
         <Route path="/Login" element={<Signuppage />} />
       </Routes>
