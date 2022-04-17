@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Footer } from "../../Components/Footer/Footer";
+import {Navbar} from "../../Components/Navbar/Navbar";
 import { Checkout } from "./Checkout";
 import { useCart } from "../../Context/CartContext";
 import { Cartpagecard } from "../../Components/Cards/Cartpagecard";
@@ -25,6 +25,7 @@ const Cartpage = () => {
 
   return (
     <div>
+      <Navbar/>
       <div className="homepage-container">
         <div className="container m-a ">
           <div className="cart-page">
