@@ -30,7 +30,9 @@ const Cartpage = () => {
           <div className="cart-page">
             <div className="grid-container m-t5 m-l5">
               <div className="item1 ">
-                <div className="checkout-header m-1t">MY CART (2 items)</div>
+                <div className="checkout-header m-1t">
+                  MY CART (<span>{state.cart.length}</span> items)
+                </div>
                 {/* address- checkout */}
                 <div className="checkout-coupon checkout-address m-1t input-padding">
                   <div>
@@ -40,8 +42,8 @@ const Cartpage = () => {
                     <button className="log-in ">CHANGE</button>
                   </div>
                 </div>
-                {!cartItemState&&
-                    <div>
+                {!cartItemState && (
+                  <div>
                     <h1>Oops!</h1>
                     <h2>NO Items in the cart</h2>
                     <div className="checkout-coupon checkout-address m-1t input-padding">
@@ -69,20 +71,49 @@ const Cartpage = () => {
                         </div>
                       </div>
                       <div>
-                       <Link to="/productpage">
-                        <button className="move-btn">
-                          <AiFillCaretRight className="icon-color " size={25} />
-                        </button>
+                        <Link to="/productpage">
+                          <button className="move-btn">
+                            <AiFillCaretRight
+                              className="icon-color "
+                              size={25}
+                            />
+                          </button>
                         </Link>
                       </div>
                     </div>
-                  </div> 
-                }
+                  </div>
+                )}
 
                 {cartItemState &&
                   state.cart.map((products) => {
                     return <Cartpagecard product={products} id={products.id} />;
                   })}
+
+                {cartItemState &&
+                  (
+                    <div>
+                      <div className="checkout-coupon checkout-address m-1t input-padding">
+                        <div>
+                          {" "}
+                          <div className="checkout-header m-1t">
+                            {" "}
+                            <FaShoppingCart className="icon-color " size={25} />
+                            Add  More From Cart
+                          </div>
+                        </div>
+                        <div>
+                          <Link to="/productpage">
+                            <button className="move-btn">
+                              <AiFillCaretRight
+                                className="icon-color "
+                                size={25}
+                              />
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                  )}
               </div>
               <div className="checkout-side ">
                 <Checkout />
