@@ -31,12 +31,12 @@ const Signuppage = () => {
                 type="password"
                 placeholder="*******"
               />
-              <a href="#" className="m-1t external-link">
+              <a  className="m-1t external-link">
                 Forgot your password?
               </a>
               <button className="login-btn m-5  btn-padding">LOGIN </button>
             
-              <a href="/Authentication/signup.html" className="m-5 external-link logout icon-color">
+              <a className="m-5 external-link logout icon-color">
               
                 Don't have an account ? Sign-up
                <span><AiFillCaretRight size={25} className="icon-color logout" /></span> 

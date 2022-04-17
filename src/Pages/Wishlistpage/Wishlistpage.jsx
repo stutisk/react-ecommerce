@@ -3,11 +3,7 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { useCart } from "../../Context/CartContext";
 import { Wishlistcard } from "../../Components/Cards/Wishlistcard";
 import "../../styles/Wishlist.css"
-import { Link } from "react-router-dom";
-import {
-    AiFillCaretRight,
-    FaShoppingCart,
-  } from "../../Components/Icons";
+
 
 const Wishlistpage = () => {
     const { state } = useCart();

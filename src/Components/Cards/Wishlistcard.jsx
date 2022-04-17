@@ -1,12 +1,11 @@
-import { FaShoppingCart, FaHeart } from "../Icons";
+import { FaShoppingCart } from "../Icons";
 import "../../styles/Cartpage.css";
 import "../../styles/ProductListing.css";
 import React from "react";
 import { useCart } from "../../Context/CartContext";
-import { HiMinusCircle, HiPlusCircle, FaBookmark } from "../Icons";
 
 const Wishlistcard = ({ product }) => {
-  const { state, dispatch } = useCart();
+  const { dispatch } = useCart();
   //   console.log(state.wishlist);
   //   console.log(state.cart);
   return (
@@ -19,7 +18,7 @@ const Wishlistcard = ({ product }) => {
             className="image-product"
           />
         </div>
-        <div >
+        <div>
           <div className=" m-5">{product.title}</div>
           <div className="delivery details">
             <div className="delivery-details m-5">{product.brand}</div>

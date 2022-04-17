@@ -21,7 +21,7 @@ const Cartpage = () => {
     } else {
       setItemState(false);
     }
-  }, []);
+  }, [state.cart.length]);
 
   return (
     <div>

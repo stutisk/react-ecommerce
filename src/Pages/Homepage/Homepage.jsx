@@ -20,7 +20,7 @@ const Homepage = () => {
         <img
           className="img-hero m-t3"
           src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649711816/Hero_v5uubq.jpg"
-          alt="hero image"
+          alt="hero"
         />
         <div className="overlay-text">
           20% OFF SITE WIDE SALE
@@ -32,12 +32,12 @@ const Homepage = () => {
       </div>
       <div className="category m-1t ">
         <p>Featured Categories</p>
-        <img src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649759391/design_ncppvj.png" />
+        <img src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649759391/design_ncppvj.png" alt="design" />
       </div>
       <Categories />
       <div className="category m-1t ">
         <p>Blogs And Articles</p>
-        <img src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649759391/design_ncppvj.png" />
+        <img src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649759391/design_ncppvj.png" alt="Blog1" />
       </div>
       {/* blogs */}
       <section className="card-categories   m-t5 ">
@@ -46,12 +46,12 @@ const Homepage = () => {
             <AiOutlineCaretLeft size={25} className="icon-color" />
           </button>
         </div>
-        <a href="" className=" cards blog-categories ">
+        <a  className=" cards blog-categories ">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/blogs1_d5a3dk.png"
               className="card-image "
-              alt="blog-img"
+              alt="blog2"
             />
           </div>
           <span className="blog-created">
@@ -62,12 +62,12 @@ const Homepage = () => {
             <div>Secrets to Make Your Scents Last...</div>
           </span>
         </a>
-        <a href="" className=" cards blog-categories">
+        <a  className=" cards blog-categories">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/b-3_mjfwyf.png"
               className="card-image "
-              alt="blog-img"
+              alt="blog3"
             />
           </div>
           <span className="blog-created">
@@ -78,12 +78,12 @@ const Homepage = () => {
             <div>Secrets to Make Your Scents Last...</div>
           </span>
         </a>
-        <a href="" className=" cards blog-categories">
+        <a className=" cards blog-categories">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/b-4_hy5gnj.png"
               className="card-image "
-              alt="blog-img"
+              alt="blog3"
             />
           </div>
           <span className="blog-created">

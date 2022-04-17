@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaHeart } from "../Icons";
+import { FaShoppingCart} from "../Icons";
 import "../../styles/Cartpage.css";
 import "../../styles/ProductListing.css";
 import React from "react";
