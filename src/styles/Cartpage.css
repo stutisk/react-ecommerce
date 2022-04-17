@@ -1,0 +1,56 @@
+@import url(../index.css);
+.grid-container {
+    display: grid;
+    width: 90%;
+    grid-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.checkout-header {
+    font-size: var(--size-1);
+    color: var(--primary-pink-color)
+}
+
+.checkout-coupon,
+.checkout-items,
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.checkout-address {
+    border: 1px solid var(--primary-pink-color);
+    border-radius: var(--border-radius)
+}
+
+
+
+.cart-title {
+    font-size: var(--size-1)
+}
+
+.counter {
+    width: 15%;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+
+}
+
+.btn-value:hover {
+    color: var(--primary-pink-color)
+}
+.horizontal-cart-image{
+    width:15rem;
+  
+ 
+}
+.content-side{
+    text-align: left;
+    font-size:var(--size-0)
+}
+.cart-card{
+    background-color:#f8f8f8;
+}
