@@ -1,20 +1,20 @@
 import "./App.css";
 import {Homepage} from "./Pages/Homepage/Homepage";
 import {Productpage} from "./Pages/Productpage/Productpage";
-import {Cartpage} from "./Pages/Cartpage/Cartpage";
 // import {MockAPI} from "./Pages/Mockman/Mockman"
 import { Routes, Route} from "react-router-dom";
-import { Navbar } from "./Components/Navbar/Navbar";
+import {Loginpage} from "./Pages/Authpage/Loginpage"
+import {Signuppage} from "./Pages/Authpage/Signuppage"
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
      <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/productpage" element={<Productpage />} />
-        <Route path="/Cartpage" element={<Cartpage />} />
+        <Route path="/Signup" element={<Loginpage />} />
+        <Route path="/Login" element={<Signuppage />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,82 @@
+@import url(../index.css);
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.aunth-container {
+  overflow: hidden;
+  width: 40%;
+  max-width: 550px;
+  min-height: 30vh;
+}
+
+.aunth-heading {
+  font-weight: var(--font-bold);
+  font-size: var(--size-2);
+  color: var(--black-color);
+  word-spacing: 9px;
+}
+
+.social-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.social-container a {
+  position: relative;
+  width: 40%;
+  text-decoration: none;
+  color: var(--white-color);
+  border-radius: 2px;
+  font-size: var(--size-0);
+  text-transform: uppercase;
+  /* text-align: center; */
+}
+
+.social-container a:first-child {
+  background-color: var(--complementary-dark-blue-color);
+}
+
+.social-container a:last-child {
+  background-color: var(--orange-color);
+}
+
+.form {
+  background-color: #d8eae87d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  max-width: 100%;
+  border: 2px solid var(--primary-pink-color);
+  border-radius: 0.25rem;
+}
+
+.aunth-input {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  width: 70%;
+}
+
+.label {
+  font-size: var(--size-0);
+  line-height: 16px;
+}
+
+.login-btn {
+  background-color: var(--primary-pink-color);
+  width: 60%;
+  font-size: var(--size-0);
+  color: white;
+}
+.external-link:hover {
+  color: var(--primary-pink-color);
+}
