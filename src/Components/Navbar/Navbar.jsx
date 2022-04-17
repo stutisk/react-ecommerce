@@ -13,13 +13,13 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="nav-link-container">
-            <a className=" nav-link padding " href="">
+            <a className=" nav-link padding " >
               Women
             </a>
-            <a className="nav-link padding" href="">
+            <a className="nav-link padding" >
               Men
             </a>
-            <a className="nav-link padding " href="">
+            <a className="nav-link padding ">
               Kids
             </a>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Footer } from "../../Components/Footer/Footer";
+import {Navbar} from "../../Components/Navbar/Navbar";
 import { Checkout } from "./Checkout";
 import { useCart } from "../../Context/CartContext";
 import { Cartpagecard } from "../../Components/Cards/Cartpagecard";
@@ -21,10 +21,11 @@ const Cartpage = () => {
     } else {
       setItemState(false);
     }
-  }, []);
+  }, [state.cart.length]);
 
   return (
     <div>
+      <Navbar/>
       <div className="homepage-container">
         <div className="container m-a ">
           <div className="cart-page">
@@ -49,16 +50,20 @@ const Cartpage = () => {
                     <div className="checkout-coupon checkout-address m-1t input-padding">
                       <div>
                         {" "}
+                       
                         <div className="checkout-header m-1t">
                           {" "}
                           <FaBookmark className="icon-color " size={25} />
-                          Add From WishList
+                      Add From WishList
                         </div>
+                     
                       </div>
                       <div>
+                      <Link to ="/Wishlist"  >
                         <button className="move-btn">
                           <AiFillCaretRight className="icon-color " size={25} />
                         </button>
+                        </Link>  
                       </div>
                     </div>
                     <div className="checkout-coupon checkout-address m-1t input-padding">
