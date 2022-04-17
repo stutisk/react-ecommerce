@@ -4,7 +4,7 @@ import "../../styles/ProductListing.css";
 import React from "react";
 import { useCart } from "../../Context/CartContext";
 import { HiMinusCircle, HiPlusCircle, FaBookmark } from "../Icons";
-
+import {Link}  from "react-router-dom";
 const Cartpagecard = ({ product }) => {
   const { state, dispatch } = useCart();
   console.log(state.wishlist);
@@ -53,11 +53,12 @@ const Cartpagecard = ({ product }) => {
             <div>
 
               {state.wishlist.some((p) => p.id === product.id) ? (
-                
+                <Link to="/Wishlist">
                   <button className=" btn-product primary btn-padding remove-from-cart-btn">
                     Go To Wishlist
                     <FaBookmark  size={22} />
                   </button>
+                  </Link>
                
               ) : (
                 <button
