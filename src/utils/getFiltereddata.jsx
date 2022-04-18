@@ -4,9 +4,9 @@ export const getFiltereddata = (state, productList) => {
   console.log("before-sort", productList);
   let sortedList = [
     ...productList.sort((productA, productB) => {
-      if (sort == "ascending") {
+      if (sort === "ascending") {
         return productA.discountedPrice - productB.discountedPrice;
-      } else if (sort == "descending") {
+      } else if (sort === "descending") {
         return productB.discountedPrice - productA.discountedPrice;
       }
       return [...productList];

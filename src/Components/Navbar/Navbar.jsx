@@ -13,15 +13,15 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="nav-link-container">
-            <a className=" nav-link padding " >
+            <Link to="/" className=" nav-link padding " >
               Women
-            </a>
-            <a className="nav-link padding" >
+            </Link>
+            <Link to ="/" className="nav-link padding" >
               Men
-            </a>
-            <a className="nav-link padding ">
+            </Link>
+            <Link to ="/" className="nav-link padding ">
               Kids
-            </a>
+            </Link>
           </div>
           <div className="search-bar m-5">
             <form action="#">

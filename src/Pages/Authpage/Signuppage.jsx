@@ -4,6 +4,7 @@ import { Footer } from "../../Components/Footer/Footer";
 import "../../styles/Homepage.css";
 import "../../styles/Auth.css"
 import {AiFillCaretRight} from "../../Components/Icons"
+import {  Link} from "react-router-dom";
 const Signuppage = () => {
   return (
     <div>
@@ -31,16 +32,16 @@ const Signuppage = () => {
                 type="password"
                 placeholder="*******"
               />
-              <a  className="m-1t external-link">
+              <Link to ="/"  className="m-1t external-link">
                 Forgot your password?
-              </a>
-              <button className="login-btn m-5  btn-padding">LOGIN </button>
+              </Link>
+              <Link to ="/"className="login-btn m-5  btn-padding">LOGIN </Link>
             
-              <a className="m-5 external-link logout icon-color">
+              <Link  className="m-5 external-link logout icon-color">
               
                 Don't have an account ? Sign-up
                <span><AiFillCaretRight size={25} className="icon-color logout" /></span> 
-              </a>
+              </Link>
             </form>
           </div>
         </div>
