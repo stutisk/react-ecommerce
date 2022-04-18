@@ -46,7 +46,7 @@ const Homepage = () => {
             <AiOutlineCaretLeft size={25} className="icon-color" />
           </button>
         </div>
-        <Link  className=" cards blog-categories ">
+        <Link to="/" className=" cards blog-categories ">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/blogs1_d5a3dk.png"
@@ -62,7 +62,7 @@ const Homepage = () => {
             <div>Secrets to Make Your Scents Last...</div>
           </span>
         </Link>
-        <Link  className=" cards blog-categories">
+        <Link to="/" className=" cards blog-categories">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/b-3_mjfwyf.png"
@@ -78,7 +78,7 @@ const Homepage = () => {
             <div>Secrets to Make Your Scents Last...</div>
           </span>
         </Link>
-        <Link Link className=" cards blog-categories">
+        <Link to="/" className=" cards blog-categories">
           <div>
             <img
               src="https://res.cloudinary.com/dvbw8xujd/image/upload/v1649784421/b-4_hy5gnj.png"

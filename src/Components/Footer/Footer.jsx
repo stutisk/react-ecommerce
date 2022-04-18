@@ -12,9 +12,9 @@ const Footer = () => {
           <div className="item">
               <h2>Main Menu</h2>
               <ul>
-                  <li><Link to ="/">HOME</Link></li>
-                  <li><Link to="/">ABOUT US</Link></li>
-                  <li><Link to="/">BLOG</Link></li>
+                  <li><Link to="">HOME</Link></li>
+                  <li><Link to="">ABOUT US</Link></li>
+                  <li><Link to="">BLOG</Link></li>
               </ul>
           </div>
           {/* <div className=" item">
