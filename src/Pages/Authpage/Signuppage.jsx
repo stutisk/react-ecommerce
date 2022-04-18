@@ -3,7 +3,8 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { Footer } from "../../Components/Footer/Footer";
 import "../../styles/Homepage.css";
 import "../../styles/Auth.css"
-import {AiFillCaretRight} from "../../Components/Icons"
+import {AiFillCaretRight} from "../../Components/Icons";
+import {  Link} from "react-router-dom";
 const Signuppage = () => {
   return (
     <div>
@@ -36,11 +37,11 @@ const Signuppage = () => {
               </a>
               <button className="login-btn m-5  btn-padding">LOGIN </button>
             
-              <a className="m-5 external-link logout icon-color">
+              <Link Link to ="/signup" className="m-5 external-link logout icon-color">
               
                 Don't have an account ? Sign-up
                <span><AiFillCaretRight size={25} className="icon-color logout" /></span> 
-              </a>
+              </Link>
             </form>
           </div>
         </div>

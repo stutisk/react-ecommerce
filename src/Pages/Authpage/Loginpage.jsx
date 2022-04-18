@@ -3,7 +3,8 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { Footer } from "../../Components/Footer/Footer";
 import "../../styles/Homepage.css";
 import "../../styles/Auth.css";
-import {AiFillCaretRight} from "../../Components/Icons"
+import {AiFillCaretRight} from "../../Components/Icons";
+import {  Link} from "react-router-dom";
 const Loginpage = () => {
   return (
     <div>
@@ -62,10 +63,10 @@ const Loginpage = () => {
                 CREATE AN ACCOUNT
               </button>
 
-              <a href="./login.html" className="m-5 external-link logout icon-color">         
+              <Link to="/login"className="m-5 external-link logout icon-color">         
                 Already have an account? Log in!
                 <span><AiFillCaretRight size={25} className="icon-color" /></span> 
-              </a>
+              </Link>
             </form>
           </div>
         </div>
