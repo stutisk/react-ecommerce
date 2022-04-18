@@ -5,8 +5,28 @@ Ecommerce Store to experience the legacy of luxary perfumes
 
 ## Different pages
 
-- [MiSto Home](https://galaxia-misto.netlify.app/)
-- [MSto Product Listing Page and Filters](https://galaxia-misto.netlify.app/product%20listing%20page/products.html)
-- [MiSto Cart Management](https://galaxia-misto.netlify.app/cart%20management/cart.html)
-- [MiSto Wishlist ](https://galaxia-misto.netlify.app/wishlist%20page/wishlist.html)
-- [Login/Logut Page](https://galaxia-misto.netlify.app/authentication/login)
+- [MiSto Home](https://galaxia-ecommerce.netlify.app/)
+- [MSto Product Listing Page and Filters](https://galaxia-ecommerce.netlify.app/productpage)
+- [MiSto Cart Management](https://galaxia-ecommerce.netlify.app/Cartpage)
+- [MiSto Wishlist ](https://galaxia-ecommerce.netlify.app/Wishlist)
+- [Login/Logut Page](https://galaxia-ecommerce.netlify.app/signup)
+
+
+##  Features
+
+- SELECT DIFFERENT CATEGORIES OF PRODUCTS FROM LANDING PAGE
+- PRODUCT LISTING PAGE
+- FILTER PRODUCTS 
+- ADD PRODUCTS TO CART AND WISHLIST
+- WISHLIST WHERE ALL YOUR FAV ITEMS ARE SAVED FOR LATER
+
+
+## Built With
+
+- HTML
+- CSS
+- React JS
+- [GALAXIA](https://galaxia-designs.netlify.app/index.htm)
+
+<br />
+_DROP A ⭐ IF YOU LIKED IT._
