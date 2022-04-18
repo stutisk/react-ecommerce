@@ -51,13 +51,12 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a
-                  href="./Authentication/login.html"
+                <Link to="/signup"
                   className="padding-i logout "
                 >
                   <FaSignOutAlt size={25} className="icon-color" />
-                  <span className="logout">Logout</span>
-                </a>
+                  <span className="logout">Login</span>
+                </Link>
               </li>
             </ul>
           </div>
