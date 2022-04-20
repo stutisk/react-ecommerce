@@ -19,7 +19,8 @@ const FilterReducer = (state, action) => {
       return { ...state, rating: action.payload };
       
     case "LOW_TO_HIGH":
-      return { ...state, sort: action.payload };
+      // return { ...state, sort: action.payload };
+      console.log("hey")
     case "HIGH_TO_LOW":
       return { ...state, sort: action.payload };
     default:

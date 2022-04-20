@@ -1,6 +1,6 @@
 import { FaShoppingCart, FaHeart } from "../Icons";
 import "../../styles/ProductListing.css";
-
+import {AiFillStar} from "../../Components/Icons"
 import React from "react";
 import { useCart } from "../../Context/CartContext";
 import { Link} from "react-router-dom";
@@ -25,9 +25,9 @@ const Productcard = ({ products }) => {
         <div className="delivery-details m-5">{products.brand}</div>
       </div>
       <div className="product-title m-5">{products.title}</div>
-      <div className="text-secondary m-5">{products.rating}</div>
+      <div className="text-secondary m-5">{products.rating}<AiFillStar className ="icon-color"/></div>
       <div className="price-container m-5">
-        <div className="price">{products.price}</div>
+        <div className="price">₹{products.price}</div>
       </div>
       <div className="delivery details">
         <div className="delivery-details m-5">{products.deliverydetails}</div>

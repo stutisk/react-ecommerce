@@ -9,7 +9,7 @@ import {
     FaTags,
     FaBookmark
   } from "react-icons/fa";
-  import { AiOutlineCaretLeft, AiFillCaretRight ,AiFillDelete} from "react-icons/ai";
+  import { AiOutlineCaretLeft, AiFillCaretRight ,AiFillDelete,AiFillStar} from "react-icons/ai";
   import { BsFillCheckCircleFill } from "react-icons/bs";
   import {HiMinusCircle,HiPlusCircle} from "react-icons/hi"
   
@@ -29,4 +29,5 @@ import {
     HiMinusCircle,
     HiPlusCircle,
     AiFillDelete,
+    AiFillStar,
   };
