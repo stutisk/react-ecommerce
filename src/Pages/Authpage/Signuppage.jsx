@@ -42,7 +42,7 @@ const Signuppage = () => {
                   <AiFillCaretRight size={25} className="icon-color logout" />
                 </span>
               </Link>
-              <Link to="/" className="m-1t external-link">
+              {/* <Link to="/" className="m-1t external-link">
                 Forgot your password?
               </Link>
               <Link to="/" className="login-btn m-5  btn-padding">
@@ -57,7 +57,7 @@ const Signuppage = () => {
                 <span>
                   <AiFillCaretRight size={25} className="icon-color logout" />
                 </span>
-              </Link>
+              </Link> */}
             </form>
           </div>
         </div>
