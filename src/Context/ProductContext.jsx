@@ -7,7 +7,7 @@ const ProductContext = createContext();
 const useProducts = () => useContext(ProductContext);
 const InitialState = {
   products: [],
-  categories: [],
+  category: [],
   rating: 0,
   price: 14300,
   sort: " ",
