@@ -1,15 +1,15 @@
-export const getFiltereddata = (state, productList) => {
-  const { categories, rating, price, sort } = state;
+export const getFiltereddata = (state, products) => {
+  const { category, rating, price, sort } = state;
 
-  console.log("before-sort", productList);
+  console.log("before-sort", products);
   let sortedList = [
-    ...productList.sort((productA, productB) => {
+    ...products.sort((productA, productB) => {
       if (sort === "ascending") {
-        return productA.discountedPrice - productB.discountedPrice;
+        return productA.price - productB.price;
       } else if (sort === "descending") {
-        return productB.discountedPrice - productA.discountedPrice;
+        return productB.price - productA.price;
       }
-      return [...productList];
+      return [...products];
     }),
   ];
   console.log("after-sort", sortedList);
@@ -17,18 +17,19 @@ export const getFiltereddata = (state, productList) => {
   let filteredData = [...sortedList.filter((item) => item.rating >= rating)];
   console.log("after-rating", filteredData);
 
-  filteredData = categories.length
+  filteredData = category.length
     ? [
         ...filteredData.filter((product) =>
-          categories.includes(product.categoryName)
+          category.includes(product.category)
         ),
       ]
     : [...filteredData];
    
 
   filteredData = [
-    ...filteredData.filter((item) => item.price < price),
+    ...filteredData.filter((product) => product.price < price),
   ];
 
   return [...filteredData];
+  
 };
