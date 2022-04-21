@@ -42,7 +42,7 @@ const AsideBar = () => {
                   Men
                 </label>
                 <label for="women">
-                  <input type="checkbox" name="CATEGORY" value="Women" onChange={(e)=>categoryRatingsHandler(e)} />
+                  <input type="checkbox" name="CATEGORY" value="women" onChange={(e)=>categoryRatingsHandler(e)} />
                   Women
                 </label>
                 <label for="children">
@@ -66,8 +66,8 @@ const AsideBar = () => {
               <input
                 type="range"
                 min="99"
-                max="15999"
-                step={1}
+                max="1599"
+                // step={1}
                 value={slider}
                 class="slider"
                 onChange={(e) => sliderHandler(e)}
@@ -101,10 +101,11 @@ const AsideBar = () => {
               <form className="checklist">
                 <label for="low">
                   <input
+               
                     type="radio"
                     name="sort"
                     id="low"
-                    onChange={() =>
+                    onClick={() =>
                       dispatch({ type: "LOW_TO_HIGH", payload: "ascending" })
                     }
                   />
