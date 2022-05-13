@@ -2,25 +2,21 @@ import "../../styles/Cartpage.css";
 
 import {FaTags} from "../../Components/Icons";
 import { useCart } from "../../Context/CartContext";
-import { useState } from "react";
+
 
 
 const Checkout= () => {
     const { state} = useCart();
-    // const [discount,setDiscount]=useState(60)
+   
 
-    
-    
       const totalMRP = state.cart.reduce(
         (acc, curr) => acc + Number(curr.price) * Number(curr.qnty),
         0
       );
-     
-     
+      
     return(
     
    <>
- 
         <div className="checkout-header m-1t">
             COUPONS
         </div>
