@@ -7,7 +7,8 @@ import {
     FaTruckMoving,
     FaRegCreditCard,
     FaTags,
-    FaBookmark
+    FaBookmark,
+    FaRegHeart,
   } from "react-icons/fa";
   import { AiOutlineCaretLeft, AiFillCaretRight ,AiFillDelete,AiTwotoneStar} from "react-icons/ai";
   import { BsFillCheckCircleFill } from "react-icons/bs";
@@ -29,5 +30,6 @@ import {
     HiMinusCircle,
     HiPlusCircle,
     AiFillDelete,
-    AiTwotoneStar
+    AiTwotoneStar,
+    FaRegHeart
   };

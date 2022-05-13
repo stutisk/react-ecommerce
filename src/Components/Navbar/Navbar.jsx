@@ -47,7 +47,7 @@ const Navbar = () => {
 
               <li>
               <Link to="/Wishlist" className="padding-i ">
-                  <FaHeart size={25} className="icon-color" />
+                  <FaHeart size={25} className="wishlist-color" />
                 </Link>
               </li>
               <li>

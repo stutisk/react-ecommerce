@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaHeart ,AiTwotoneStar} from "../Icons";
+import { FaShoppingCart, FaHeart ,AiTwotoneStar,FaRegHeart} from "../Icons";
 import "../../styles/ProductListing.css";
 
 import React from "react";
@@ -49,14 +49,29 @@ const Productcard = ({ products }) => {
             <FaShoppingCart size={22} />
           </button>
         )}
-        <button
+        {
+          wishlist.some((p) => p.id===products.id) ? (
+       <button
           onClick={() =>
-            dispatch({ type: "ADD_TO_WISHLIST", payload: products })
-          }
-          className="wishlist-badge input-padding "
+            dispatch({ type: "REMOVE_FROM_WISHLIST", payload: products })
+         }
+         className="wishlist-badge input-padding "
         >
-          <FaHeart size={25} />
-        </button>
+         <FaRegHeart size={25} />
+        </button> 
+          ):
+          (
+            <button
+               onClick={() =>
+                 dispatch({ type: "ADD_TO_WISHLIST", payload: products })
+              }
+              className="  wishlist-badge wishlist-color input-padding "
+             >
+              <FaHeart size={25} />
+             </button> 
+             )
+        }
+      
       </div>
     </div>
   );

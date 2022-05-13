@@ -27,9 +27,9 @@ export const products = [
   brand: "Blue Label",
   image:
     "https://res.cloudinary.com/dvbw8xujd/image/upload/v1649930571/blue-label_bmhp4h.jpg",
-  price: 800.00,
+  price: 800,
   Soldby: "Cloudtail India",
-  category: "men & children",
+  category: "brands",
   rating: 4,
   inStock: true,
  deliverydetails: "FREE delivery: Friday, April 15"
@@ -41,7 +41,7 @@ export const products = [
   brand: "Kenneth",
   image:
     "https://res.cloudinary.com/dvbw8xujd/image/upload/v1649930095/Kenneth-Cole-Black_295x295_jirxjf.webp",
-  price: 14300,
+  price: 1430,
   Soldby: " BGorgeous.",
   category: "men",
   rating: 5,
@@ -55,7 +55,7 @@ export const products = [
   brand: "ROYAL CREED",
   image:
     "https://res.cloudinary.com/dvbw8xujd/image/upload/v1649930571/Yves_Saint_Laurent_LE_VESTIAIRE_SUPREME_BOUQUET_U_001_207x207_wknrld.webp",
-  price: 11750,
+  price: 1175,
   Soldby: " Yves Saint Laurent ",
   category: "men",
   rating: 1,
@@ -71,7 +71,7 @@ export const products = [
     "https://res.cloudinary.com/dvbw8xujd/image/upload/v1649933238/velvet-orchid_233x233_il1wt9.jpg",
   price: 1999,
   Soldby: " Royal Creed ",
-  category: "women & children",
+  category: "children",
   rating: 4,
   inStock: true,
  deliverydetails: "FREE delivery: Monday, April 18"
@@ -129,7 +129,7 @@ export const products = [
     "https://res.cloudinary.com/dvbw8xujd/image/upload/v1649934092/set2_nun7db.webp",
   price: 2555,
   Soldby: " Royal Creed ",
-  category: "sets",
+  category: "sets" ,
   rating: 4.7,
   inStock: true,
  deliverydetails: "FREE delivery: Monday, May 1"

@@ -12,12 +12,16 @@ const cartReducer = (state, action) => {
         cart: state.cart.filter((obj) => obj.id !== action.payload.id),
       };
 
-    case "ADD_TO_WISHLIST":
+    case "REMOVE_FROM_WISHLIST":
       return {
         ...state,
-        wishlist: [...state.wishlist, { ...action.payload }],
+        wishlist: state.wishlist.filter((obj) => obj.id !== action.payload.id),
       };
-
+      case "ADD_TO_WISHLIST":
+        return {
+          ...state,
+          wishlist: [...state.wishlist, { ...action.payload }],
+        };
     case "INCRESE_QUANTITY":
       return {};
 

@@ -66,7 +66,7 @@ const AsideBar = () => {
               <input
                 type="range"
                 min="99"
-                max="1599"
+                max="3200"
                 // step={1}
                 value={slider}
                 class="slider"

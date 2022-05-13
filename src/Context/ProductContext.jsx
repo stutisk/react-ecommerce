@@ -9,7 +9,7 @@ const InitialState = {
   products: [],
   category: [],
   rating: 0,
-  price: 14300,
+  price: 11750,
   sort: " ",
 };
 const ProductProvider = ({ children }) => {
