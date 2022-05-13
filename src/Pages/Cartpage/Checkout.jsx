@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Checkout= () => {
     const { state} = useCart();
-    const [discount,setDiscount]=useState(60)
+    // const [discount,setDiscount]=useState(60)
 
     
     
@@ -37,10 +37,10 @@ const Checkout= () => {
                 Price Details <span>({state.cart.length} items)</span>
             </div>
             <div className="checkout-items m-1t">Total MRP <span>₹{totalMRP}</span></div>
-            <div className="checkout-items m-1t">Discount On MRP <span>{discount}</span></div>
+            <div className="checkout-items m-1t">Discount On MRP <span>60</span></div>
             <div className="checkout-items m-1t"> Convenience Fee<span>FREE</span></div>
             {/* <hr> */}
-            <div className="checkout-items m-1t card-btn-container"> TOTAL AMOUNT<span>₹{totalMRP-discount}</span></div>
+            <div className="checkout-items m-1t card-btn-container"> TOTAL AMOUNT<span>₹{totalMRP-60}</span></div>
             <button className=" btn-product primary btn-padding m-5">YAY! PLACE ORDER </button>
 
         </div>
