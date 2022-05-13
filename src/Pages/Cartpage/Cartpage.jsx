@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const Cartpage = () => {
   const { state } = useCart();
-  console.log(state.cart);
+  // console.log(state.cart);
   const [cartItemState, setItemState] = useState(false);
   useEffect(() => {
     if (state.cart.length > 0) {

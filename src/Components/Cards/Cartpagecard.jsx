@@ -7,8 +7,8 @@ import { HiMinusCircle, HiPlusCircle, FaBookmark } from "../Icons";
 import {Link}  from "react-router-dom";
 const Cartpagecard = ({ product }) => {
   const { state, dispatch } = useCart();
-  console.log(state.wishlist);
-  console.log(state.cart);
+  // console.log(state.wishlist);
+  // console.log(state.cart);
   return (
     <div>
       <div className="cart-card padding card-Horizontal m-2t ">
@@ -32,22 +32,25 @@ const Cartpagecard = ({ product }) => {
               {product.deliverydetails}
             </div>
           </div>
-          <div className="cart-actions">
+          
+
             <div className="counter">
-              <button
-                onClick={() =>
-                  dispatch({ type: "INCRESE_QUANTITY", payload: product })
-                }
+              <button onClick={() => dispatch({type: "DECREASE_QUANTITY", payload: product})}
                 className="btn-value"
               >
                 <HiMinusCircle className="icon-color" size={30} />
               </button>
-              <p className="count m-1t">8</p>
-              <button className="btn-value">
+              
+              <span >{product.qnty}</span>
+              <button 
+               onClick={() =>
+                dispatch({ type: "INCREASE_QUANTITY", payload: product })
+              } 
+              className="btn-value">
                 <HiPlusCircle className="icon-color" size={30} />
               </button>
             </div>
-          </div>
+          
 
           <div>
             <div>
