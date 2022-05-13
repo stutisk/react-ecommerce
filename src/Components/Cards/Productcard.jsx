@@ -1,4 +1,4 @@
-import { FaShoppingCart, FaHeart } from "../Icons";
+import { FaShoppingCart, FaHeart ,AiTwotoneStar} from "../Icons";
 import "../../styles/ProductListing.css";
 
 import React from "react";
@@ -7,7 +7,7 @@ import { Link} from "react-router-dom";
 
 const Productcard = ({ products }) => {
   const {
-    state: { cart },
+    state: { cart,wishlist },
     dispatch,
   } = useCart();
   // console.log(cart);
@@ -25,7 +25,7 @@ const Productcard = ({ products }) => {
         <div className="delivery-details m-5">{products.brand}</div>
       </div>
       <div className="product-title m-5">{products.title}</div>
-      <div className="text-secondary m-5">{products.rating}</div>
+      <div className="text-secondary rating-color m-5">{products.rating} <span className="rating-color"><AiTwotoneStar/></span></div>
       <div className="price-container m-5">
         <div className="price">{products.price}</div>
       </div>

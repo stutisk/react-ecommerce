@@ -54,3 +54,6 @@
     display: inline-flex;
     
 }
+.rating-color{
+  color:var(--complementary-dark-green-color)
+}
