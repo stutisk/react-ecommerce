@@ -59,7 +59,7 @@
   color:var(--secondry-pink-color);
 }
 .wishlist-badge {
-  color: var(--secondry-pink-color);
+  color: var(--orange-color);
   position: absolute;
   top: 5px;
   right: 5px;

@@ -84,13 +84,13 @@ const AsideBar = () => {
                   <input type="radio" name="RATINGS" value={4} onChange={(e)=>categoryRatingsHandler(e)}/>4 Stars & above
                 </label>
                 <label for="three">
-                  <input type="radio" name="RATINGS" id="three" value={3} onChange={(e)=>categoryRatingsHandler(e)} />2 Stars & above
+                  <input type="radio" name="RATINGS" id="three" value={3} onChange={(e)=>categoryRatingsHandler(e)} />3 Stars & above
                 </label>
                 <label for="two">
-                  <input type="radio" name="RATINGS" id="two" value={2} onChange={(e)=>categoryRatingsHandler(e)} />3 Stars & above
+                  <input type="radio" name="RATINGS" id="two" value={2} onChange={(e)=>categoryRatingsHandler(e)} />2 Stars & above
                 </label>
                 <label for="one">
-                  <input type="radio" name="RATINGS" id="one" value={1} onChange={(e)=>categoryRatingsHandler(e)} />2 Stars & above
+                  <input type="radio" name="RATINGS" id="one" value={1} onChange={(e)=>categoryRatingsHandler(e)} />1 Stars & above
                 </label>
               </form>
             </nav>
