@@ -55,9 +55,9 @@ const Productcard = ({ products }) => {
           onClick={() =>
             dispatch({ type: "REMOVE_FROM_WISHLIST", payload: products })
          }
-         className="wishlist-badge input-padding "
-        >
-         <FaRegHeart size={25} />
+         className="  wishlist-badge wishlist-color input-padding "
+         >
+          <FaHeart size={25} />
         </button> 
           ):
           (
@@ -65,9 +65,10 @@ const Productcard = ({ products }) => {
                onClick={() =>
                  dispatch({ type: "ADD_TO_WISHLIST", payload: products })
               }
-              className="  wishlist-badge wishlist-color input-padding "
-             >
-              <FaHeart size={25} />
+              
+              className="wishlist-badge input-padding icon-color "
+        >
+         <FaRegHeart size={25} />
              </button> 
              )
         }

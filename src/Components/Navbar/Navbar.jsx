@@ -1,5 +1,5 @@
 import "../../styles/Navbar.css";
-import { FaShoppingCart, FaHeart, FaSignOutAlt } from "../Icons";
+import { FaShoppingCart, FaRegHeart, FaSignOutAlt } from "../Icons";
 import React from "react";
 import {  Link} from "react-router-dom";
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
 
               <li>
               <Link to="/Wishlist" className="padding-i ">
-                  <FaHeart size={25} className="wishlist-color" />
+                  <FaRegHeart size={25} className="icon-color" />
                 </Link>
               </li>
               <li>
